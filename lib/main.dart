@@ -14,16 +14,22 @@ class SplashScrenn extends StatelessWidget{
           decoration: BoxDecoration(
             color: Color(0XFFFFFFFF),
           ),
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children:[
-              Image.asset(
-                'assets/title.png',
-              ),
-              CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation(
-                  Colors.black
-                ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/title.png',
+                    width: 200,
+                  ),
+                  CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation(
+                      Colors.black
+                    ),
+                  ),
+                ],
               ),
             ]
           ),
